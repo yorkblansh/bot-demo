@@ -1,0 +1,28 @@
+version: "3.1"
+
+services:
+  bot-demo:
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
+    container_name: bot-demo
+    build:
+      context: ./
+      dockerfile: ./Dockerfile
+    volumes:
+      - ..:/bot-demo
+    tty: true
+    stdin_open: true
+    restart: on-failure
+    command: sleep infinity
+
+  mongo:
+    image: mongo:8.0.3
+    restart: always
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: root
+      MONGO_INITDB_ROOT_PASSWORD: example
+    volumes:
+      - dbdata6:/data/db
+
+volumes:
+  dbdata6:
