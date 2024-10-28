@@ -2,9 +2,17 @@ import type { Context } from 'telegraf'
 import type { Update } from 'telegraf/typings/core/types/typegram'
 import type { SceneContext } from 'telegraf/typings/scenes'
 
+interface MessageContext {
+	chat_id: number
+	message_id: number
+	data?: unknown
+}
+
 interface SessionData {
-	choosen_fiat_currency?: string
-	choosen_crypto_currency?: string
+	// choosen_fiat_currency?: string
+	// choosen_crypto_currency?: string
+	counter?: number
+	messageContext?: MessageContext[]
 }
 
 export interface UserSessionContext extends Context {

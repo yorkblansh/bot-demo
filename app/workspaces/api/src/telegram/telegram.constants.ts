@@ -5,3 +5,14 @@ export const ACTION_BUY = {
 	text: 'Купить крипту',
 	callback: 'buy',
 }
+
+export const ACTION_COUNTER = {
+	INC: {
+		text: '+',
+		callback: 'inc',
+	},
+	DEC: {
+		text: '-',
+		callback: 'dec',
+	},
+}

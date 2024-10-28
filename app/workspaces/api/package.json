@@ -47,7 +47,7 @@
 		"dotenv": "^16.0.3",
 		"express": "^4.19.2",
 		"fill-range": "^7.0.1",
-		"fp-ts": "^2.13.1",
+		"fp-ts": "^2.16.9",
 		"input": "^1.0.1",
 		"jest-extended": "^4.0.2",
 		"lodash": "^4.17.21",
