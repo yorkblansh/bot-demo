@@ -1,0 +1,17 @@
+{
+  "name": "bot-demo",
+  "dockerComposeFile": "../docker-compose.yaml",
+  "service": "bot-demo",
+  "workspaceFolder": "/bot-demo/${localWorkspaceFolderBasename}",
+  "remoteUser": "node",
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "vscode-icons-team.vscode-icons",
+        "esbenp.prettier-vscode",
+        "cweijan.vscode-mysql-client2",
+        "Gruntfuggly.todo-tree"
+      ]
+    }
+  }
+}
